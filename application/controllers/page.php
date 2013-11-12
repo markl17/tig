@@ -8,8 +8,8 @@ class Page extends Frontend_Controller {
     }
 
     public function index() {
-    	$pages = $this->page_m->get_by(array('slug' => 'hi'));
-    	//var_dump($this);
+    	$pages = $this->page_m->get_by(array('slug' => 'howareyou'));
+    	var_dump($pages);
     }
     public function save() {
     	$data = array(

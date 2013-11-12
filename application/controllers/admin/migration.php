@@ -8,7 +8,7 @@ class Migration extends Admin_Controller
 	}
 
 	public function index ()
-	{echo 'test';
+	{
 		$this->load->library('migration');
 		if (! $this->migration->current()) {
 			show_error($this->migration->error_string());
